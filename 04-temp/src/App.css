@@ -1,5 +1,7 @@
-#root {
+body {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .app {
@@ -7,4 +9,9 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 500px;
+  height: 300px;
+  border-radius: 20px;
+  background: #0080c0;
+  box-shadow: 35px 35px 100px #005a86, -35px -35px 100px #00a6fa;
 }
