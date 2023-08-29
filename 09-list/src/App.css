@@ -120,3 +120,13 @@ button:hover::after {
   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.062);
   gap: 1em;
 }
+
+#deleteButton {
+  width: auto;
+  height: auto;
+  background-color: white;
+  color: red;
+  padding: 5px;
+  border: 1px red solid;
+  border-radius: 10%;
+}

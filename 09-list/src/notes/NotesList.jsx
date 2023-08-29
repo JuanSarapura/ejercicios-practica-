@@ -1,8 +1,9 @@
+import { useContext } from "react";
 import Note from "./Note";
-import useNotes from "../hooks/useNotes";
+import { NotesContext } from "../contexts/NotesContext";
 
 export default function NotesList() {
-  const { notes } = useNotes();
+  const { notes } = useContext(NotesContext);
 
   return (
     <div className="notesContainer">
@@ -13,6 +14,7 @@ export default function NotesList() {
           key={note.id}
           title={note.title}
           message={note.message}
+          id={note.id}
         />
       ))}
     </div>
